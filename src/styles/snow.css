@@ -1,0 +1,29 @@
+.snowflake {
+      position: fixed;
+      color: white;
+      user-select: none;
+      z-index: 1;
+      pointer-events: none;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+      animation: snowfall linear forwards;
+      will-change: transform;
+      white-space: nowrap;
+    }
+    
+    @keyframes snowfall {
+      0% {
+        transform: translateY(-10vh) translateX(0) rotate(0deg);
+      }
+      25% {
+        transform: translateY(25vh) translateX(5vw) rotate(90deg);
+      }
+      50% {
+        transform: translateY(50vh) translateX(-5vw) rotate(180deg);
+      }
+      75% {
+        transform: translateY(75vh) translateX(5vw) rotate(270deg);
+      }
+      100% {
+        transform: translateY(100vh) translateX(0) rotate(360deg);
+      }
+    }
